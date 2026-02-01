@@ -2,78 +2,122 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NITROY IA | Professional Algorithmic Trading by NITROYS Studios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>NITROY IA | Nitroys Studios Professional Trading</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #020617; color: #f8fafc; scroll-behavior: smooth; user-select: none; }
+        body { font-family: 'Inter', sans-serif; background-color: #020617; color: #f8fafc; scroll-behavior: smooth; user-select: none; -webkit-tap-highlight-color: transparent; }
         .font-orbitron { font-family: 'Orbitron', sans-serif; }
         .gradient-nitroy { background: linear-gradient(135deg, #ff4d00 0%, #ff9500 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .bg-nitroy { background: linear-gradient(135deg, #ff4d00 0%, #ff9500 100%); }
-        .card-glass { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
-        /* Ofuscación visual de selección */
-        ::selection { background: #ff4d00; color: white; }
+        .card-glass { background: rgba(15, 23, 42, 0.9); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        
+        /* Animación sutil para el Hero */
+        @keyframes pulse-glow { 0% { opacity: 0.5; } 50% { opacity: 0.8; } 100% { opacity: 0.5; } }
+        .glow-effect { position: absolute; top: -10%; left: 50%; transform: translateX(-50%); width: 100%; height: 60%; background: radial-gradient(circle, rgba(255, 77, 0, 0.15) 0%, transparent 70%); z-index: 0; animation: pulse-glow 4s infinite; pointer-events: none; }
     </style>
 </head>
 <body oncontextmenu="return false;">
 
-    <nav class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-white/5">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold font-orbitron gradient-nitroy">NITROY</div>
-            <div class="text-[9px] text-right leading-tight text-gray-500 uppercase font-orbitron">
-                Nitroys Studios<br><span class="text-orange-600 font-bold underline">Private Access Only</span>
+    <div class="glow-effect"></div>
+
+    <nav class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur-xl border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-5 py-4 flex justify-between items-center">
+            <div class="text-xl md:text-2xl font-black font-orbitron gradient-nitroy tracking-tighter">NITROY</div>
+            <div class="text-[8px] md:text-[10px] text-right leading-tight text-gray-400 uppercase font-bold">
+                <span class="text-orange-500 italic text-[10px] md:text-[12px]">NITROYS STUDIOS</span><br>Proprietary Algorithmic Tech
             </div>
         </div>
     </nav>
 
-    <header class="relative pt-20 pb-32 text-center">
-        <div class="max-w-7xl mx-auto px-6 relative z-10">
-            <h1 class="text-7xl md:text-9xl font-extrabold font-orbitron mb-8 tracking-tighter uppercase">Nit<span class="gradient-nitroy">roy</span></h1>
-            <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-10">Software de Trading Institucional Privado. Una vez activado, el sistema se vincula a su identidad digital. <strong>Venta final sin reembolsos.</strong></p>
-            <a href="#licencia" class="bg-nitroy px-12 py-5 rounded-sm font-bold uppercase tracking-[0.2em] text-sm hover:scale-105 transition-all inline-block">Adquirir Licencia Única</a>
+    <header class="relative pt-12 pb-20 md:pt-24 md:pb-32 px-6 text-center">
+        <div class="relative z-10">
+            <span class="inline-block border border-orange-500/50 text-orange-500 text-[9px] font-bold px-3 py-1 rounded-full mb-6 tracking-widest uppercase">Ecosistema Cerrado v4.0</span>
+            <h1 class="text-5xl md:text-9xl font-black font-orbitron mb-6 tracking-tighter leading-none">NIT<span class="gradient-nitroy">ROY</span></h1>
+            <p class="text-base md:text-2xl text-gray-400 max-w-2xl mx-auto mb-10 font-light leading-relaxed px-4">
+                Domina el mercado con la IA de <span class="text-white font-bold">Nitroys Studios</span>. Ingeniería de élite diseñada para el crecimiento del capital institucional.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#precio" class="bg-nitroy w-full md:w-auto px-10 py-5 rounded-md font-bold uppercase tracking-widest text-sm shadow-lg shadow-orange-600/20 active:scale-95 transition-all">Obtener Acceso Vitalicio</a>
+            </div>
         </div>
     </header>
 
-    <section id="licencia" class="py-20">
-        <div class="max-w-xl mx-auto card-glass p-12 rounded-lg border-t-4 border-orange-600 shadow-2xl">
-            <h3 class="text-2xl font-orbitron font-bold text-center mb-6 italic">MEMBRESÍA NITROYS STUDIOS</h3>
-            <div class="text-center mb-8">
-                <span class="text-6xl font-black font-orbitron">$499</span>
-                <p class="text-orange-500 text-xs mt-2 tracking-widest font-bold uppercase">Pago Único Vitalicio</p>
+    <section class="py-16 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="card-glass p-8 rounded-2xl border-l-4 border-l-orange-600">
+                <h3 class="text-orange-500 font-orbitron font-bold mb-2">CEREBRO IA</h3>
+                <p class="text-sm text-gray-400 leading-relaxed italic">Tu pago único permite escalar los servidores centrales, mejorando la precisión de cada operación en tiempo real.</p>
             </div>
-            <ul class="text-sm space-y-4 mb-10 text-gray-400 border-y border-white/5 py-6">
-                <li>• Acceso al "Cerebro" central de la IA NITROY.</li>
-                <li>• Licencia privada intransferible.</li>
-                <li>• <span class="text-white font-bold italic">Aviso:</span> Al ser un producto digital de código privado, no se admiten devoluciones bajo ninguna circunstancia.</li>
-            </ul>
-            <button class="w-full bg-nitroy py-4 font-bold text-white hover:tracking-[0.2em] transition-all duration-500 uppercase">Confirmar Orden</button>
+            <div class="card-glass p-8 rounded-2xl border-l-4 border-l-orange-600">
+                <h3 class="text-orange-500 font-orbitron font-bold mb-2">PRIVACIDAD</h3>
+                <p class="text-sm text-gray-400 leading-relaxed italic">Código privado de Nitroys Studios. No compartimos algoritmos con terceros. Licencia única por usuario.</p>
+            </div>
+            <div class="card-glass p-8 rounded-2xl border-l-4 border-l-orange-600">
+                <h3 class="text-orange-500 font-orbitron font-bold mb-2">OPTIMIZACIÓN</h3>
+                <p class="text-sm text-gray-400 leading-relaxed italic">Sin configuraciones complejas. La IA se adapta automáticamente a la volatilidad del activo seleccionado.</p>
+            </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center text-[10px] text-gray-600 tracking-[0.3em] uppercase">
-        NITROYS STUDIOS &copy; 2026 | PROTECTED SYSTEM
+    <section id="precio" class="py-12 px-5">
+        <div class="max-w-lg mx-auto bg-slate-900 rounded-3xl overflow-hidden border border-white/10 shadow-3xl">
+            <div class="bg-nitroy py-4 text-center">
+                <span class="text-[10px] font-black text-white uppercase tracking-[0.4em]">Propuesta de Acceso Único</span>
+            </div>
+            <div class="p-8 md:p-12 text-center">
+                <h2 class="text-2xl font-orbitron font-bold mb-2">LICENCIA NITROY</h2>
+                <div class="flex justify-center items-baseline gap-1 my-6">
+                    <span class="text-6xl font-black font-orbitron">$499</span>
+                </div>
+                
+                <div class="space-y-4 text-left mb-10">
+                    <div class="flex items-start gap-3">
+                        <span class="text-orange-500 font-bold">✓</span>
+                        <p class="text-sm text-gray-300 italic">Acceso ilimitado al algoritmo de Nitroys Studios.</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-orange-500 font-bold">✓</span>
+                        <p class="text-sm text-gray-300 italic">Actualizaciones vitalicias del cerebro central.</p>
+                    </div>
+                    <div class="flex items-start gap-3 border-t border-white/5 pt-4">
+                        <span class="text-red-500 font-bold underline">!</span>
+                        <p class="text-xs text-red-400 font-bold uppercase">Software Privado: Al recibir acceso a la tecnología propietaria, no se admite devolución del dinero.</p>
+                    </div>
+                </div>
+
+                <button class="w-full bg-white text-black py-5 rounded-xl font-black text-sm uppercase tracking-widest hover:bg-orange-500 hover:text-white transition-all active:scale-95 shadow-xl">
+                    Adquirir Mi Licencia
+                </button>
+                <p class="mt-6 text-[9px] text-gray-500 uppercase tracking-tighter">Powered by Nitroys Cloud Security Protocol</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 px-6 text-center">
+        <div class="text-2xl font-orbitron gradient-nitroy font-black mb-4">NITROY</div>
+        <p class="text-[9px] text-gray-600 uppercase tracking-[0.3em] mb-4">Nitroys Studios &copy; 2026 - Propiedad Intelectual Protegida</p>
+        <div class="text-[8px] text-gray-700 max-w-md mx-auto leading-relaxed">
+            EL TRADING DE ACTIVOS FINANCIEROS TIENE UN RIESGO ALTO. NITROY ES UNA HERRAMIENTA ANALÍTICA. USTED ES RESPONSABLE DE SU PROPIO CAPITAL. VENTA DEFINITIVA SIN REEMBOLSO.
+        </div>
     </footer>
 
-    <script type="text/javascript">
-        // Ofuscación básica de funciones de bloqueo
-        (function() {
-            const _0x1a = function(e) {
-                if (e.keyCode == 123) return false; // F12
-                if (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74 || e.keyCode == 67)) return false; // Ctrl+Shift+I/J/C
-                if (e.ctrlKey && e.keyCode == 85) return false; // Ctrl+U (Ver código)
-            };
-            window.addEventListener('keydown', _0x1a);
-            
-            // Deshabilitar click derecho con mensaje silencioso
-            document.addEventListener('contextmenu', event => event.preventDefault());
-
-            // Detectar apertura de DevTools (opcional, redirige si abren consola)
-            setInterval(function(){
-                if(window.outerHeight - window.innerHeight > 160 || window.outerWidth - window.innerWidth > 160){
-                    document.body.innerHTML = "<div style='color:white;text-align:center;margin-top:20%;font-family:sans-serif;'><h1>ACCESO DENEGADO</h1><p>Protocolo de seguridad NITROY activado.</p></div>";
+    <script>
+        (function(){
+            // Bloqueo de teclas y combinaciones
+            window.addEventListener('keydown', function(e) {
+                if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74 || e.keyCode == 67)) || (e.ctrlKey && e.keyCode == 85)) {
+                    e.preventDefault();
+                    return false;
                 }
-            }, 1000);
+            });
+            // Bloqueo de click derecho
+            document.addEventListener('contextmenu', e => e.preventDefault());
+            // Prevenir inspección por gestos en móvil
+            document.addEventListener('touchstart', function(e) {
+                if (e.touches.length > 1) e.preventDefault();
+            }, {passive: false});
         })();
     </script>
 </body>
