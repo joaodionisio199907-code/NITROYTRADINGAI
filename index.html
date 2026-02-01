@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NITROY IA | Professional Algorithmic Trading by NITROYS Studios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #020617; color: #f8fafc; scroll-behavior: smooth; user-select: none; }
+        .font-orbitron { font-family: 'Orbitron', sans-serif; }
+        .gradient-nitroy { background: linear-gradient(135deg, #ff4d00 0%, #ff9500 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .bg-nitroy { background: linear-gradient(135deg, #ff4d00 0%, #ff9500 100%); }
+        .card-glass { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        /* Ofuscación visual de selección */
+        ::selection { background: #ff4d00; color: white; }
+    </style>
+</head>
+<body oncontextmenu="return false;">
+
+    <nav class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold font-orbitron gradient-nitroy">NITROY</div>
+            <div class="text-[9px] text-right leading-tight text-gray-500 uppercase font-orbitron">
+                Nitroys Studios<br><span class="text-orange-600 font-bold underline">Private Access Only</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-20 pb-32 text-center">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <h1 class="text-7xl md:text-9xl font-extrabold font-orbitron mb-8 tracking-tighter uppercase">Nit<span class="gradient-nitroy">roy</span></h1>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-10">Software de Trading Institucional Privado. Una vez activado, el sistema se vincula a su identidad digital. <strong>Venta final sin reembolsos.</strong></p>
+            <a href="#licencia" class="bg-nitroy px-12 py-5 rounded-sm font-bold uppercase tracking-[0.2em] text-sm hover:scale-105 transition-all inline-block">Adquirir Licencia Única</a>
+        </div>
+    </header>
+
+    <section id="licencia" class="py-20">
+        <div class="max-w-xl mx-auto card-glass p-12 rounded-lg border-t-4 border-orange-600 shadow-2xl">
+            <h3 class="text-2xl font-orbitron font-bold text-center mb-6 italic">MEMBRESÍA NITROYS STUDIOS</h3>
+            <div class="text-center mb-8">
+                <span class="text-6xl font-black font-orbitron">$499</span>
+                <p class="text-orange-500 text-xs mt-2 tracking-widest font-bold uppercase">Pago Único Vitalicio</p>
+            </div>
+            <ul class="text-sm space-y-4 mb-10 text-gray-400 border-y border-white/5 py-6">
+                <li>• Acceso al "Cerebro" central de la IA NITROY.</li>
+                <li>• Licencia privada intransferible.</li>
+                <li>• <span class="text-white font-bold italic">Aviso:</span> Al ser un producto digital de código privado, no se admiten devoluciones bajo ninguna circunstancia.</li>
+            </ul>
+            <button class="w-full bg-nitroy py-4 font-bold text-white hover:tracking-[0.2em] transition-all duration-500 uppercase">Confirmar Orden</button>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-[10px] text-gray-600 tracking-[0.3em] uppercase">
+        NITROYS STUDIOS &copy; 2026 | PROTECTED SYSTEM
+    </footer>
+
+    <script type="text/javascript">
+        // Ofuscación básica de funciones de bloqueo
+        (function() {
+            const _0x1a = function(e) {
+                if (e.keyCode == 123) return false; // F12
+                if (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74 || e.keyCode == 67)) return false; // Ctrl+Shift+I/J/C
+                if (e.ctrlKey && e.keyCode == 85) return false; // Ctrl+U (Ver código)
+            };
+            window.addEventListener('keydown', _0x1a);
+            
+            // Deshabilitar click derecho con mensaje silencioso
+            document.addEventListener('contextmenu', event => event.preventDefault());
+
+            // Detectar apertura de DevTools (opcional, redirige si abren consola)
+            setInterval(function(){
+                if(window.outerHeight - window.innerHeight > 160 || window.outerWidth - window.innerWidth > 160){
+                    document.body.innerHTML = "<div style='color:white;text-align:center;margin-top:20%;font-family:sans-serif;'><h1>ACCESO DENEGADO</h1><p>Protocolo de seguridad NITROY activado.</p></div>";
+                }
+            }, 1000);
+        })();
+    </script>
+</body>
+</html>
